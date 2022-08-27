@@ -21,9 +21,9 @@
     "webpack": "^3.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha --timeout 5000 -w ./test/*.test.js",
+    "test": "mocha --timeout 50000 -w ./test/*.test.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
